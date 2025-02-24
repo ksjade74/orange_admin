@@ -1,0 +1,147 @@
+
+main .card {
+    border: 0;
+}
+main .card-footer,
+main .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: .75rem 1.25rem;
+    padding-top: 20px;
+    background-color: transparent;
+    border: 0;
+}
+main .card-body {
+    padding: 1.25rem;
+}
+main .card-body .subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;    
+}
+
+.calc-box {
+    padding: .25rem .5rem;
+    border-radius: 5px;
+}
+
+
+/* products */
+.products .card {
+    border: 1px solid transparent;
+}
+.products .card:hover {
+    border-color: var(--hover-clr);
+}
+.products .card .calc-box {
+    height: 28px;
+}
+.products .card-footer {
+    font-size: .85rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.switch input:checked + .slider {
+    background-color: var(--hover-clr);
+}
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px var(--hover-clr);
+}
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+.switch .slider.round {
+    border-radius: 20px;
+}
+.switch .slider.round:before {
+    border-radius: 50%;
+}
+
+.pd-modify {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.product-detail .thumb {
+
+}
+
+
+/* login */
+.register {
+    height: 100vh;
+}
+.register .card {
+    height: 70vh;
+}
+.bg-login-image {
+    background: url(https://source.unsplash.com/GjAC98IoHx0);
+    background-position: center;
+    background-size: cover;
+}
+
+form.user .form-control-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: 1rem 1rem;
+}
+form.user .btn-user {
+    font-size: .8rem;
+    border-radius: 10rem;
+    padding: .75rem 1rem;
+}
+.btn-google {
+    color: #fff;
+    background-color: #ea4335;
+    border-color: #fff;
+}
+.btn-facebook {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #fff;
+}
+
+/* media query */
+@media(min-width: 992px) {
+
+}
+
+@media (max-width: 991px) {
+
+}

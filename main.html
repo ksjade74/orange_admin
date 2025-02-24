@@ -1,0 +1,102 @@
+<div class="row">
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow border-0">
+            <div class="card-header">
+                <h6>시간대 예상 발전량</h6>
+                <div>btn</div>
+            </div>
+            <div class="card-body">
+                <div class="chart-bar">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card shadow mb-4">
+            <div class="card-header text-gray-700 pb-0">
+                <div>전날출력 비교</div>
+                <div>kw</div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div class="calc-box bg-info bg-opacity-25">↓ 22%</div>
+                <h2 class="mb-0">109</h2>
+            </div>
+        </div>
+        <div class="card shadow mb-4">
+            <div class="card-header text-gray-700 pb-0">
+                <div>현재 출력량</div>
+                <div>kw</div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div class="calc-box text-danger bg-danger bg-opacity-10">↑ 10%</div>
+                <h2 class="mb-0">174</h2>
+            </div>
+        </div>
+        <div class="card shadow mb-4">
+            <div class="card-header text-gray-700 pb-0">
+                <div>남은 발전량</div>
+                <div>kw</div>
+            </div>
+            <div class="card-body d-flex justify-content-between align-items-center">
+                <div class="progress w-50" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                    <div class="progress-bar bg-danger bg-opacity-75" style="width: 55%"></div>
+                </div>
+                <h2 class="mb-0">230</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 mb-4">
+        <div class="card shadow">
+            <div class="card-header no-arrow">
+                <h6>인버터별 출력량</h6>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
+                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
+                </ul>
+            </div>
+            <div class="card-body">
+                test
+            </div>
+        </div>        
+    </div>
+    <div class="col-lg-8 mb-4">
+        <div class="card shadow">
+            <div class="card-header">
+                <h6>인버터 정보</h6>
+                <a href="#"><i class="fa-solid fa-ellipsis-v fa-sm fa-fw text-gray-400"></i></a>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>이름</th>
+                            <th>출력</th>
+                            <th>일일 생산률</th>
+                            <th>AC전력</th>
+                            <th>상태</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>A-1021</td>
+                            <td>11.3</td>
+                            <td>70</td>
+                            <td>50</td>
+                            <td><span class="c"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>        
+    </div>
+</div>

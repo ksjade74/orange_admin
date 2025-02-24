@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/widgets.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg main-header shadow-sm py-0">
+        <div class="container-fluid">
+            <button type="button" class="sidebar-toggle d-block">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="./img/apps.svg" class="me-3" width="30" height="30" alt=""><span class="fw-bold">DASHBOARD</span>
+            </a>            
+            <div class="topbar d-flex ms-auto me-0">
+                <!--//Search -->
+                <form class="d-none d-lg-inline-block form-inline ms-auto me-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group position-relative">
+                        <i class="fa-solid fa-search fa-lg"></i>
+                        <input type="text" class="form-control bg-light border-0 small rounded-4" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">                
+                    </div>
+                </form>
+                <ul class="navbar-nav mb-0">
+                    <li class="nav-item dropdown no-arrow d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-regular fa-bell fa-fw fa-lg"></i>
+                            <span class="badge badge-counter rounded-pill bg-danger">1+</span>
+                        </a>
+                        <div class="dropdown-list dropdown-menu dropdown-menu-end shadow-sm py-0"
+                            aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">알림 센터</h6>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="me-3">
+                                    <div class="icon-circle bg-primary">
+                                        <i class="fa-solid fa-file-alt text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">2024. 10. 20</div>
+                                    <span>이번 달 보고서 다운로드</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="me-3">
+                                    <div class="icon-circle bg-warning">
+                                        <i class="fa-solid fa-triangle-exclamation text-white"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">2024. 10. 21</div>
+                                    <span>경고</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item text-center small text-gray-600" href="#">모든 알림 보기</a>
+                        </div>
+                    </li>  
+                    <li class="nav-item dropdown no-arrow">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user fa-fw fa-lg"></i>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-sm fa-fw text-gray-400 me-2"></i>회원정보</a></li>
+                        <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-cogs fa-sm fa-fw text-gray-400 me-2"></i>설정</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sign-out-alt fa-sm fa-fw text-gray-400 me-2"></i>로그아웃</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+    </nav>
+
+    <div id="container-wrapper" class="wrapper">
+
+        <aside id="sidebar">
+            <ul class="sidebar-nav mt-4">
+                <li class="sidebar-item">
+                    <a href="./index.html" class="sidebar-link">
+                        <i class="fa-solid fa-house"></i>
+                        <span>대시보드</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#member" aria-expanded="false">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span>회원관리</span>
+                    </a>
+                    <ul id="member" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="member.html" class="sidebar-link">
+                                회원목록
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false">
+                        <i class="fa-regular fa-hourglass"></i>
+                        <span>제품관리</span>
+                    </a>
+                    <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="product_list.html" class="sidebar-link">
+                               제품목록
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="product_detail.html" class="sidebar-link">제품상세</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
+                        <i class="fa-regular fa-hourglass"></i>
+                        <span>페이지</span>
+                    </a>
+                    <ul id="login" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="login.html" class="sidebar-link">로그인</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#depth3" aria-expanded="false">회원가입</a>
+                            <ul id="depth3" class="sidebar-dropdown list-unstyled collapse">
+                                <li class="sidebar-item">
+                                    <a href="" class="sidebar-link">- 3차 메뉴</a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="" class="sidebar-link">- 3차 메뉴</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul><!--//sidebar-nav -->
+            <div class="sidebar-footer d-block">                                
+                <ul class="sidebar-nav">
+                    <li>
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                    <li class="text-center"><small class="text-opacity-25">Copyright. SOSCUT</small></li>
+                </ul>
+            </div>            
+        </aside>
+        
+        <main>    
+            <div class="p-4 products">     
+                <div class="d-flex justify-content-start align-items-center mb-4">
+                    <div class="d-flex text-dark">제품 정보</div>
+                    <form class="d-none d-lg-inline-block form-inline ms-3 navbar-search" style="padding-left: 35px;">
+                        <div class="input-group input-group-sm position-relative">
+                            <i class="fa-solid fa-search" style="left: 12px;top:8px;"></i>
+                            <input type="text" class="form-control small rounded" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">
+                        </div>
+                    </form>
+                    <select class="form-select form-select-sm ms-2" style="max-width:100px;">
+                        <option selected>전체</option>
+                        <option value="1">인버터</option>
+                        <option value="2">모듈</option>
+                    </select>
+                    <a href="#" class="ms-auto bg-point text-light btn fs-sm">추가하기</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-danger text-danger bg-opacity-25 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div>
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">A-1021</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-opacity-25 fs-sm"></div>
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">C-5000</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-opacity-25 fs-sm"></div>
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">A-0002</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-danger text-danger bg-opacity-25 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div> 
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">A-3200</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-opacity-25 fs-sm"></div>
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">A-5002</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow px-lg-3 py-2">
+                            <div class="card-header align-items-center">
+                                <div class="calc-box bg-opacity-25 fs-sm"></div>
+                                <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
+                            </div>
+                            <div class="card-body py-0">
+                                <a href="product_detail.html">
+                                    <img data-src="holder.js/100px200" class="rounded" alt="">
+                                </a>
+                                <div class="subject border-bottom">
+                                    <h4 class="mb-0">C-1202</h4>
+                                    <div>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>                
+                            <div class="card-footer flex-column">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <div>금일 발전량</div>
+                                    <div>11.2kW</div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>누적 발전량</div>
+                                    <div>500kW</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- col -->
+                </div>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/holder.min.js"></script>
+    <!-- html include script -->
+    <script>
+        function includeHTML() {
+          var z, i, elmnt, file, xhttp;
+
+          z = document.getElementsByTagName("*");
+          for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+
+            file = elmnt.getAttribute("data-include-html");
+            if (file) {
+
+              xhttp = new XMLHttpRequest();
+              xhttp.onreadystatechange = function() {
+                if (this.readyState == 4) {
+                  if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                  if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+
+                  elmnt.removeAttribute("data-include-html");
+                  includeHTML();
+                }
+              }      
+              xhttp.open("GET", file, true);
+              xhttp.send();
+
+              return;
+            }
+          }
+        };
+    </script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+</html>
