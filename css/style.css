@@ -6,6 +6,7 @@
     --hover-clr: #FF8F2E;
     --text-clr: #777;
     --point-clr: #FF8F2E;
+    --orange-clr: #FF8F2E;
     --hoverbg-clr: #f8f8f8;
     --sidebar-w: 260px;
 }
@@ -27,7 +28,7 @@ a:hover {
 }
 .text-point {color: var(--point-clr);}
 .bg-point {background-color: var(--point-clr);}
-
+.border-orange {border-color: var(--orange-clr);}
 
 
 .navbar {
@@ -214,7 +215,30 @@ li .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
 }
 
 
+/* main widget */
+.h-10 > span {
+    margin-right: 5px;
+    height: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+span.w-5 {width: 35%;}
+span.w-4 {width: 25%;}
+span.w-3 {width: 20%;}
+span.w-2 {width: 13%;}
+span.w-1 {width: 7%;}
 
+
+.comp-widget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    border-width: 0;
+    border-left-width: 4px;
+    border-style: solid;
+}
 
 
 
@@ -247,6 +271,7 @@ li .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
     border: 0;
 }
 
+.opacity-10 {opacity: .1;}
 
 .text-info {color: rgb(18, 168, 255) !important;}
 .bg-info {background-color: rgba(18, 168, 255, .10) !important;}
