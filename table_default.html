@@ -83,7 +83,7 @@
         <aside id="sidebar">
             <ul class="sidebar-nav mt-4">
                 <li class="sidebar-item">
-                    <a href="./index.html" class="sidebar-link active">
+                    <a href="./index.html" class="sidebar-link">
                         <img src="./icons/line/Dashboard.svg" width="20" class="me-3" alt="">
                         <span>대시보드</span>
                     </a>
@@ -125,20 +125,10 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false">
+                    <a href="#" class="sidebar-link active">
                         <img src="./icons/line/Tables.svg" width="20" class="me-3" alt="">
                         <span>테이블</span>
                     </a>
-                    <ul id="table" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="table_default.html" class="sidebar-link">
-                               기본 테이블
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="table_status.html" class="sidebar-link">상태 테이블</a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
@@ -162,7 +152,7 @@
                 </li>
             </ul><!--//sidebar-nav -->
             <div class="px-4">
-                <hr>
+                <hr class="opacity-10">
             </div>
             <div class="sidebar-footer d-block">                                
                 <ul class="sidebar-nav">
@@ -187,7 +177,7 @@
                         <div class="card p-3 shadow">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5>제품 데이터</h5>
+                                    <h5>기본 테이블</h5>
                                     <div>
                                         달력
                                     </div>
@@ -198,10 +188,11 @@
                                             <tr>
                                                 <th scope="col">날짜</th>
                                                 <th scope="col">시간</th>
-                                                <th scope="col">예상출력</th>
-                                                <th scope="col">평균출력</th>
-                                                <th scope="col">누적발전량</th>
+                                                <th scope="col">예상값</th>
+                                                <th scope="col">평균값</th>
+                                                <th scope="col">누적</th>
                                                 <th scope="col">오차률</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -212,6 +203,7 @@
                                                 <td>11.0</td>
                                                 <td>50</td>
                                                 <td>0.02</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>2025-01-02</td>
@@ -220,6 +212,7 @@
                                                 <td>20.0</td>
                                                 <td>32</td>
                                                 <td>0.00</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>2025-01-02</td>
@@ -228,6 +221,7 @@
                                                 <td>33.0</td>
                                                 <td>33</td>
                                                 <td>0.00</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>2025-01-02</td>
@@ -236,6 +230,7 @@
                                                 <td>40.0</td>
                                                 <td>46</td>
                                                 <td>0.03</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>2025-01-02</td>
@@ -244,6 +239,7 @@
                                                 <td>25.3</td>
                                                 <td>53</td>
                                                 <td>0.01</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
                                                 <td>2025-01-02</td>
@@ -252,6 +248,7 @@
                                                 <td>15.0</td>
                                                 <td>50</td>
                                                 <td>0.12</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -265,71 +262,72 @@
                         <div class="card p-3 shadow">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5>제품 데이터</h5>
+                                    <h5>체크박스 테이블</h5>
                                     <div>
-                                        달력
+                                        <a href="#" class="btn btn-sm border-1 border-dark border-opacity-25">편집</a>
+                                        <a href="#" class="btn btn-sm bg-dark bg-opacity-10">삭제</a>
                                     </div>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover text-center">
                                         <thead>
                                             <tr>
-                                                <th scope="col">날짜</th>
-                                                <th scope="col">시간</th>
-                                                <th scope="col">예상출력</th>
-                                                <th scope="col">평균출력</th>
-                                                <th scope="col">누적발전량</th>
-                                                <th scope="col">오차률</th>
+                                                <th><input type="checkbox" /></th>
+                                                <th scope="col">이름</th>
+                                                <th scope="col">예상 값</th>
+                                                <th scope="col">평균 값</th>
+                                                <th scope="col">누적</th>
+                                                <th scope="col"></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" checked /></td>
+                                                <td>A-1021</td>
                                                 <td>07:00</td>
                                                 <td>11.3</td>
                                                 <td>11.0</td>
-                                                <td>50</td>
-                                                <td>0.02</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" checked /></td>
+                                                <td>C-1021</td>
                                                 <td>08:00</td>
                                                 <td>20.3</td>
                                                 <td>20.0</td>
-                                                <td>32</td>
-                                                <td>0.00</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" /></td>
+                                                <td>A-1021</td>
                                                 <td>09:00</td>
                                                 <td>33.3</td>
                                                 <td>33.0</td>
-                                                <td>33</td>
-                                                <td>0.00</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" /></td>
+                                                <td>A-1021</td>
                                                 <td>10:00</td>
                                                 <td>40.3</td>
                                                 <td>40.0</td>
-                                                <td>46</td>
-                                                <td>0.03</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" checked /></td>
+                                                <td>A-1021</td>
                                                 <td>11:00</td>
                                                 <td>25.3</td>
                                                 <td>25.3</td>
-                                                <td>53</td>
-                                                <td>0.01</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                             <tr>
-                                                <td>2025-01-02</td>
+                                                <td><input type="checkbox" class="form-check-input" /></td>
+                                                <td>C-1021</td>
                                                 <td>12:00</td>
                                                 <td>15.0</td>
                                                 <td>15.0</td>
-                                                <td>50</td>
-                                                <td>0.12</td>
+                                                <td><i class="fa-solid fa-chevron-right fs-xs"></i></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -343,10 +341,7 @@
                         <div class="card p-3 shadow">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5>제품 데이터</h5>
-                                    <div>
-                                        달력
-                                    </div>
+                                    <h6>줄무늬 테이블</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover text-center">
@@ -398,13 +393,10 @@
                         <div class="card p-3 shadow">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5>제품 데이터</h5>
-                                    <div>
-                                        달력
-                                    </div>
+                                    <h6>경계선 테이블</h6>
                                 </div>
                                 <div class="table-responsive">
-                                    <table class="table table-hover text-center">
+                                    <table class="table table-hover table-bordered text-center">
                                         <thead>
                                             <tr>
                                                 <th scope="col">날짜</th>
@@ -453,10 +445,7 @@
                         <div class="card p-3 shadow">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between mb-3">
-                                    <h5>제품 데이터</h5>
-                                    <div>
-                                        달력
-                                    </div>
+                                    <h6>제품 데이터</h6>
                                 </div>
                                 <div class="table-responsive">
                                     <table class="table table-hover text-center">

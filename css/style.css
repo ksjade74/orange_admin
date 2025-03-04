@@ -146,7 +146,7 @@ a:hover {
     top: 0;
     width: var(--sidebar-w);
     min-width: var(--sidebar-w);
-    padding-bottom: 70px;
+    padding-top: 70px;
     height: 100vh;
     background-color: #fff;
     transition: all .3s ease-in-out;
@@ -183,6 +183,7 @@ li .sidebar-link:hover {
     background-color: var(--hoverbg-clr);
     border-left: 3px solid var(--line-clr);
 }
+.sidebar-dropdown .sidebar-link.active,
 li .sidebar-link.active > span,
 li .sidebar-link.active > img,
 li .sidebar-link:hover > img {
@@ -280,7 +281,6 @@ span.w-1 {width: 7%;}
 .text-info {color: rgb(18, 168, 255) !important;}
 .bg-info {background-color: rgba(18, 168, 255, .10) !important;}
 .text-danger {color: rgb(255, 84, 55) !important;}
-
 
 .shadow {box-shadow: 0 .10rem 1.5rem 0 rgba(58, 59, 69, .1) !important;}
 
