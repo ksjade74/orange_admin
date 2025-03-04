@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg main-header shadow-sm py-0">
         <div class="container-fluid">
             <button type="button" class="sidebar-toggle d-block">
-                <i class="fa-solid fa-bars"></i>
+                <img src="./icons/line/Menu-hamburger.svg" width="20" class="svg-light" alt="">
             </button>
             <a href="index.html" class="logo d-flex align-items-center">
                 <img src="./img/apps.svg" class="me-3" width="30" height="30" alt=""><span class="fw-bold">DASHBOARD</span>
@@ -23,7 +23,7 @@
                 <!--//Search -->
                 <form class="d-none d-lg-inline-block form-inline ms-auto me-md-3 my-2 my-md-0 mw-100 navbar-search">
                     <div class="input-group position-relative">
-                        <i class="fa-solid fa-search fa-lg"></i>
+                        <img src="./icons/line/Search.svg" width="20" class="" alt="">
                         <input type="text" class="form-control bg-light border-0 small rounded-4" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">                
                     </div>
                 </form>
@@ -31,7 +31,7 @@
                     <li class="nav-item dropdown no-arrow d-none d-lg-block">
                         <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa-regular fa-bell fa-fw fa-lg"></i>
+                            <img src="./icons/line/E-mail.svg" width="24" class="svg-light" alt="">
                             <span class="badge badge-counter rounded-pill bg-danger">1+</span>
                         </a>
                         <div class="dropdown-list dropdown-menu dropdown-menu-end shadow-sm py-0"
@@ -64,7 +64,7 @@
                     </li>  
                     <li class="nav-item dropdown no-arrow">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-user fa-fw fa-lg"></i>
+                        <img src="./icons/line/Member.svg" width="24" class="svg-light" alt="">
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end shadow-sm">
                         <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-sm fa-fw text-gray-400 me-2"></i>회원정보</a></li>
@@ -83,34 +83,41 @@
         <aside id="sidebar">
             <ul class="sidebar-nav mt-4">
                 <li class="sidebar-item">
-                    <a href="./index.html" class="sidebar-link">
-                        <i class="fa-solid fa-house"></i>
+                    <a href="./index.html" class="sidebar-link active">
+                        <img src="./icons/line/Dashboard.svg" width="20" class="me-3" alt="">
                         <span>대시보드</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#member" aria-expanded="false">
-                        <i class="fa-solid fa-user-group"></i>
+                        <img src="./icons/line/Member.svg" width="20" class="me-3" alt="">
                         <span>회원관리</span>
                     </a>
                     <ul id="member" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="member.html" class="sidebar-link">
+                                프로필
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="member-list.html" class="sidebar-link">
                                 회원목록
                             </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="login.html" class="sidebar-link">로그인</a>
+                            <a href="signin.html" class="sidebar-link">회원가입</a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false">
-                        <i class="fa-regular fa-hourglass"></i>
+                        <img src="./icons/line/Ecommerce.svg" width="20" class="me-3" alt="">
                         <span>제품관리</span>
                     </a>
                     <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="product_list.html" class="sidebar-link">
-                               제품목록
-                            </a>
+                            <a href="product_list.html" class="sidebar-link">제품목록</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="product_detail.html" class="sidebar-link">제품상세</a>
@@ -118,37 +125,57 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
-                        <i class="fa-regular fa-hourglass"></i>
-                        <span>페이지</span>
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false">
+                        <img src="./icons/line/Tables.svg" width="20" class="me-3" alt="">
+                        <span>테이블</span>
                     </a>
-                    <ul id="login" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <ul id="table" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="login.html" class="sidebar-link">로그인</a>
+                            <a href="table_default.html" class="sidebar-link">
+                               기본 테이블
+                            </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#depth3" aria-expanded="false">회원가입</a>
-                            <ul id="depth3" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="" class="sidebar-link">- 3차 메뉴</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="" class="sidebar-link">- 3차 메뉴</a>
-                                </li>
-                            </ul>
+                            <a href="table_status.html" class="sidebar-link">상태 테이블</a>
                         </li>
                     </ul>
                 </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
+                        <img src="./icons/line/E-mail.svg" width="20" class="me-3" alt="">
+                        <span>메일</span>
+                    </a>
+                    <ul id="login" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                        <li class="sidebar-item">
+                            <a href="mail-write.html" class="sidebar-link">메일쓰기</a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="mail-folder.html" class="sidebar-link">메일함</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./widgets.html" class="sidebar-link">
+                        <img src="./icons/line/Widget.svg" width="20" class="me-3" alt="">
+                        <span>위젯</span>
+                    </a>
+                </li>
             </ul><!--//sidebar-nav -->
+            <div class="px-4">
+                <hr>
+            </div>
             <div class="sidebar-footer d-block">                                
                 <ul class="sidebar-nav">
                     <li>
                         <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                            <span>Logout</span>
+                            <img src="./icons/line/External-link.svg" width="20" class="me-3" alt="">
+                            <span>사이트 열기</span>
+                        </a>
+                        <a href="#" class="sidebar-link">
+                            <img src="./icons/line/Sign-out.svg" width="20" class="me-3" alt="">
+                            <span>로그아웃</span>
                         </a>
                     </li>
-                    <li class="text-center"><small class="text-opacity-25">Copyright. SOSCUT</small></li>
                 </ul>
             </div>            
         </aside>
@@ -159,7 +186,7 @@
                     <div class="d-flex text-dark">제품 정보</div>
                     <form class="d-none d-lg-inline-block form-inline ms-3 navbar-search" style="padding-left: 35px;">
                         <div class="input-group input-group-sm position-relative">
-                            <i class="fa-solid fa-search" style="left: 12px;top:8px;"></i>
+                            <img src="./icons/line/Search.svg" width="18" class="svg-dark" alt="">
                             <input type="text" class="form-control small rounded" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">
                         </div>
                     </form>

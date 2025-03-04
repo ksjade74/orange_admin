@@ -6,13 +6,13 @@ main .card-footer,
 main .card-header {
     display: flex;
     justify-content: space-between;
-    padding: .75rem 1.25rem;
+    padding: 0 1.25rem;
     padding-top: 20px;
     background-color: transparent;
     border: 0;
 }
 main .card-body {
-    padding: 1.25rem;
+    padding: 1.35rem 1.25rem;
 }
 main .card-body .subject {
     display: flex;
@@ -24,6 +24,15 @@ main .card-body .subject {
 .calc-box {
     padding: .25rem .5rem;
     border-radius: 5px;
+}
+
+.chart-bar {
+    height: 20rem;
+}
+
+.form-check-input:checked {
+    background-color: var(--orange-clr);
+    border-color: var(--orange-clr);
 }
 
 
