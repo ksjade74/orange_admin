@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html data-bs-theme="light">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orange Admin DashBoard</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/widgets.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Admin DashBoard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/widgets.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg main-header shadow-sm py-0">
         <div class="container-fluid">
@@ -16,14 +20,16 @@
                 <img src="./icons/line/Menu-hamburger.svg" width="20" class="svg-light" alt="">
             </button>
             <a href="index.html" class="logo d-flex align-items-center">
-                <img src="./img/apps.svg" class="me-3" width="30" height="30" alt=""><span class="fw-bold">DASHBOARD</span>
-            </a>            
+                <img src="./img/apps.svg" class="me-3" width="30" height="30" alt=""><span
+                    class="fw-bold">DASHBOARD</span>
+            </a>
             <div class="topbar d-flex ms-auto me-0">
                 <!--//Search -->
                 <form class="d-none d-lg-inline-block form-inline ms-auto me-md-3 my-2 my-md-0 mw-100 navbar-search">
                     <div class="input-group position-relative">
                         <img src="./icons/line/Search.svg" width="20" class="" alt="">
-                        <input type="text" class="form-control bg-light border-0 small rounded-4" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">                
+                        <input type="text" class="form-control bg-light border-0 small rounded-4" placeholder="검색"
+                            aria-label="Search" aria-describedby="basic-addon">
                     </div>
                 </form>
                 <ul class="navbar-nav mb-0">
@@ -60,20 +66,27 @@
                             </a>
                             <a class="dropdown-item text-center small text-gray-600" href="#">모든 알림 보기</a>
                         </div>
-                    </li>  
+                    </li>
                     <li class="nav-item dropdown no-arrow">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./icons/line/Member.svg" width="24" class="svg-light" alt="">
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user fa-sm fa-fw text-gray-400 me-2"></i>회원정보</a></li>
-                        <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-cogs fa-sm fa-fw text-gray-400 me-2"></i>설정</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sign-out-alt fa-sm fa-fw text-gray-400 me-2"></i>로그아웃</a></li>
-                      </ul>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./icons/line/Member.svg" width="24" class="svg-light" alt="">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-user fa-sm fa-fw text-gray-400 me-2"></i>회원정보</a></li>
+                            <li><a class="dropdown-item" href="#"> <i
+                                        class="fa-solid fa-cogs fa-sm fa-fw text-gray-400 me-2"></i>설정</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="fa-solid fa-sign-out-alt fa-sm fa-fw text-gray-400 me-2"></i>로그아웃</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </div>
     </nav>
 
@@ -88,7 +101,8 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#member" aria-expanded="false">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#member" aria-expanded="false">
                         <img src="./icons/line/Member.svg" width="20" class="me-3" alt="">
                         <span>회원관리</span>
                     </a>
@@ -110,7 +124,8 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#product" aria-expanded="false">
                         <img src="./icons/line/Ecommerce.svg" width="20" class="me-3" alt="">
                         <span>제품관리</span>
                     </a>
@@ -124,14 +139,15 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#table" aria-expanded="false">
                         <img src="./icons/line/Tables.svg" width="20" class="me-3" alt="">
                         <span>테이블</span>
                     </a>
                     <ul id="table" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
                             <a href="table_default.html" class="sidebar-link">
-                               기본 테이블
+                                기본 테이블
                             </a>
                         </li>
                         <li class="sidebar-item">
@@ -140,16 +156,17 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
+                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#login" aria-expanded="false">
                         <img src="./icons/line/E-mail.svg" width="20" class="me-3" alt="">
                         <span>메일</span>
                     </a>
                     <ul id="login" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="mail-write.html" class="sidebar-link">메일쓰기</a>
+                            <a href="mail_write.html" class="sidebar-link">메일쓰기</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="mail-folder.html" class="sidebar-link">메일함</a>
+                            <a href="mail_list.html" class="sidebar-link">메일함</a>
                         </li>
                     </ul>
                 </li>
@@ -163,7 +180,7 @@
             <div class="px-4">
                 <hr>
             </div>
-            <div class="sidebar-footer d-block">                                
+            <div class="sidebar-footer d-block">
                 <ul class="sidebar-nav">
                     <li>
                         <a href="#" class="sidebar-link">
@@ -176,315 +193,332 @@
                         </a>
                     </li>
                 </ul>
-            </div>            
+            </div>
         </aside>
-        
-        <main>    
-            <div class="p-4">     
-              <div class="row">
-                <div class="col-lg-8 mb-4">
-                    <div class="card shadow border-0">
-                        <div class="card-header">
-                            <h6 class="mb-0">시간대 예상 발전량</h6>
-                            <div class="d-flex fs-xs">
-                                <div class="bg-primary bg-opacity-10 rounded-1 py-1 px-2">사용 전력 6,012</div>
-                                <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">예상 생산 7,521</div>
-                                <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">현재 생산 7,032</div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <div class="chart-bar">
-                                <canvas id="barChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card shadow mb-4">
-                        <div class="card-header text-gray-700 pb-0">
-                            <div>전날출력 비교</div>
-                            <div>kw</div>
-                        </div>
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="calc-box bg-info bg-opacity-25">↓ 22%</div>
-                            <h2 class="mb-0">109</h2>
-                        </div>
-                    </div>
-                    <div class="card shadow mb-4">
-                        <div class="card-header text-gray-700 pb-0">
-                            <div>현재 출력량</div>
-                            <div>kw</div>
-                        </div>
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="calc-box text-danger bg-danger bg-opacity-10">↑ 10%</div>
-                            <h2 class="mb-0">174</h2>
-                        </div>
-                    </div>
-                    <div class="card shadow mb-4">
-                        <div class="card-header text-gray-700 pb-0">
-                            <div>남은 발전량</div>
-                            <div>kw</div>
-                        </div>
-                        <div class="card-body d-flex justify-content-between align-items-center">
-                            <div class="progress w-50" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
-                                <div class="progress-bar bg-point" style="width: 55%"></div>
-                            </div>
-                            <h2 class="mb-0">230</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card shadow">
-                        <div class="card-header no-arrow">
-                            <h6 class="mb-0">인버터별 출력량</h6>
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                                <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                          <div class="chart-pie pt-4">
-                            <canvas id="pieChart"></canvas>
-                          </div>
-                          <div class="d-flex align-items-center justify-content-center py-5 my-2">
-                            empty
-                          </div>
-                        </div>
-                    </div>        
-                </div>
-                <div class="col-lg-8 mb-4">
-                    <div class="card shadow">
-                        <div class="card-header">
-                            <h6 class="mb-0">인버터 정보</h6>
-                            <a href="#" class="bg-danger bg-opacity-10 text-danger fs-xs rounded-1 py-1 px-2"><img src="./icons/line/Caution.svg" width="14" alt=""> 이상감지되는 인버터가 있습니다.</a>
-                        </div>
-                        <div class="card-body">
-                            <table class="table table-sm table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>NO</th>
-                                        <th>이름</th>
-                                        <th>출력</th>
-                                        <th>일일 생산률</th>
-                                        <th>AC전력</th>
-                                        <th>상태</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>A-1021</td>
-                                        <td>11.3</td>
-                                        <td>70</td>
-                                        <td>50</td>
-                                        <td><span class="c"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>A-5000</td>
-                                        <td>20.0</td>
-                                        <td>60</td>
-                                        <td>32</td>
-                                        <td><span class="r"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>A-0002</td>
-                                        <td>33.3</td>
-                                        <td>77</td>
-                                        <td>33</td>
-                                        <td><span class="c"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>A-3200</td>
-                                        <td>40.5</td>
-                                        <td>54</td>
-                                        <td>46</td>
-                                        <td><span class="c"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>A-2002</td>
-                                        <td>25.3</td>
-                                        <td>83</td>
-                                        <td>53</td>
-                                        <td><span class="c"></span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>        
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card shadow">
-                        <div class="card-header no-arrow">
-                            <h6 class="mb-0">생산량 비교</h6>
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                                <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <div class="position-relative d-flex h-10 mb-5">
-                                <span class="w-5 bg-point"></span>
-                                <span class="w-4 bg-warning"></span>
-                                <span class="w-3 bg-danger bg-opacity-50"></span>
-                                <span class="w-2 bg-info"></span>
-                                <span class="w-1 bg-dark-subtle"></span>
-                            </div>
-                            <div class="comp-widget border-orange mb-4">
-                                <div>
-                                    <span class="text-body-tertiary me-3">A-1021</span>
-                                    42%
-                                </div>
-                                <div>10.7</div>
-                            </div>
-                            <div class="comp-widget border-warning mb-4">
-                                <div>
-                                    <span class="text-body-tertiary me-3">C-5000</span>
-                                    22%
-                                </div>
-                                <div>53.3</div>
-                            </div>
-                            <div class="comp-widget border-danger border-opacity-50 mb-4">
-                                <div>
-                                    <span class="text-body-tertiary me-3">A-0002</span>
-                                    18%
-                                </div>
-                                <div>4.87</div>
-                            </div>
-                            <div class="comp-widget border-info mb-4">
-                                <div>
-                                    <span class="text-body-tertiary me-3">A-3200</span>
-                                    10%
-                                </div>
-                                <div>3.03</div>
-                            </div>
-                            <div class="comp-widget border-dark-subtle mb-4">
-                                <div>
-                                    <span class="text-body-tertiary me-3">A-5002</span>
-                                    6%
-                                </div>
-                                <div>2.07</div>
-                            </div>
-                        </div>
-                    </div>        
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <div class="card shadow">
-                                <div class="card-header no-arrow">
-                                    <h6 class="mb-0">생산량 비교</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <div class="fs-xs">7,406,000￦</div>
-                                        <div class="fs-xs">10,000,000￦</div>
-                                    </div>
-                                    <div class="progress w-100" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
-                                        <div class="progress-bar bg-point" style="width: 65%"></div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card shadow">
-                                <div class="card-header no-arrow">
-                                    <h6 class="mb-0">월간 이익 성과</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <div class="fs-xs">3,320,000￦</div>
-                                        <div class="fs-xs">6,000,000￦</div>
-                                    </div>
-                                    <div class="progress w-100" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
-                                        <div class="progress-bar bg-point" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="col-12 mb-4">
-                            <div class="card shadow">
-                                <div class="card-header no-arrow">
-                                    <h6 class="mb-0">생산규모 대비 이익률</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-center py-3">
-                                        Graph
-                                    </div>                                    
-                                </div>
-                            </div>  
-                        </div>
 
-                    </div>                          
+        <main>
+            <div class="p-4">
+                <div class="row">
+                    <div class="col-lg-8 mb-4">
+                        <div class="card shadow border-0">
+                            <div class="card-header">
+                                <h6 class="mb-0">시간대 예상 발전량</h6>
+                                <div class="d-flex fs-xs">
+                                    <div class="bg-primary bg-opacity-10 rounded-1 py-1 px-2">사용 전력 6,012</div>
+                                    <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">예상 생산 7,521</div>
+                                    <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">현재 생산 7,032</div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-bar">
+                                    <canvas id="barChart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card shadow mb-4">
+                            <div class="card-header text-gray-700 pb-0">
+                                <div>전날출력 비교</div>
+                                <div>kw</div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="calc-box bg-info bg-opacity-25">↓ 22%</div>
+                                <h2 class="mb-0">109</h2>
+                            </div>
+                        </div>
+                        <div class="card shadow mb-4">
+                            <div class="card-header text-gray-700 pb-0">
+                                <div>현재 출력량</div>
+                                <div>kw</div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="calc-box text-danger bg-danger bg-opacity-10">↑ 10%</div>
+                                <h2 class="mb-0">174</h2>
+                            </div>
+                        </div>
+                        <div class="card shadow mb-4">
+                            <div class="card-header text-gray-700 pb-0">
+                                <div>남은 발전량</div>
+                                <div>kw</div>
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="progress w-50" role="progressbar" aria-label="Example 1px high"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
+                                    <div class="progress-bar bg-point" style="width: 55%"></div>
+                                </div>
+                                <h2 class="mb-0">230</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card shadow">
-                        <div class="card-header no-arrow">
-                            <h6 class="mb-0">기기 이상감지</h6>
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                                <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <div class="d-flex align-items-center justify-content-center py-5 my-5">
-                                chart
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header no-arrow">
+                                <h6 class="mb-0">인버터별 출력량</h6>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
+                                </ul>
                             </div>
-                            <hr class="my-4 opacity-10">
-                            <div>
-                                <div class="d-flex justify-content-between mb-3">
-                                    <div class="fs-sm">
-                                        <span class="text-body-tertiary me-3">A-3200</span>외부기온 이상
-                                    </div>
-                                    <div class="fs-sm">14시간 전</div>
+                            <div class="card-body">
+                                <div class="chart-pie pt-4">
+                                    <canvas id="pieChart"></canvas>
                                 </div>
-                                <div class="d-flex justify-content-between mb-3">
-                                    <div class="fs-sm">
-                                        <span class="text-body-tertiary me-3">A-0002</span>기기내부 과열
-                                    </div>
-                                    <div class="fs-sm">1일 전</div>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="fs-sm">
-                                        <span class="text-body-tertiary me-3">A-1021</span>외부기온 이상
-                                    </div>
-                                    <div class="fs-sm">4일 전</div>
+                                <div class="d-flex align-items-center justify-content-center py-5 my-2">
+                                    empty
                                 </div>
                             </div>
                         </div>
-                    </div>        
-                </div>            
-            </div>
+                    </div>
+                    <div class="col-lg-8 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header">
+                                <h6 class="mb-0">인버터 정보</h6>
+                                <a href="#" class="bg-danger bg-opacity-10 text-danger fs-xs rounded-1 py-1 px-2"><img
+                                        src="./icons/line/Caution.svg" width="14" alt=""> 이상감지되는 인버터가 있습니다.</a>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>이름</th>
+                                            <th>출력</th>
+                                            <th>일일 생산률</th>
+                                            <th>AC전력</th>
+                                            <th>상태</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>A-1021</td>
+                                            <td>11.3</td>
+                                            <td>70</td>
+                                            <td>50</td>
+                                            <td><span class="c"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>A-5000</td>
+                                            <td>20.0</td>
+                                            <td>60</td>
+                                            <td>32</td>
+                                            <td><span class="r"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>A-0002</td>
+                                            <td>33.3</td>
+                                            <td>77</td>
+                                            <td>33</td>
+                                            <td><span class="c"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>A-3200</td>
+                                            <td>40.5</td>
+                                            <td>54</td>
+                                            <td>46</td>
+                                            <td><span class="c"></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>A-2002</td>
+                                            <td>25.3</td>
+                                            <td>83</td>
+                                            <td>53</td>
+                                            <td><span class="c"></span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header no-arrow">
+                                <h6 class="mb-0">생산량 비교</h6>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="position-relative d-flex h-10 mb-5">
+                                    <span class="w-5 bg-point"></span>
+                                    <span class="w-4 bg-warning"></span>
+                                    <span class="w-3 bg-danger bg-opacity-50"></span>
+                                    <span class="w-2 bg-info"></span>
+                                    <span class="w-1 bg-dark-subtle"></span>
+                                </div>
+                                <div class="comp-widget border-orange mb-4">
+                                    <div>
+                                        <span class="text-body-tertiary me-3">A-1021</span>
+                                        42%
+                                    </div>
+                                    <div>10.7</div>
+                                </div>
+                                <div class="comp-widget border-warning mb-4">
+                                    <div>
+                                        <span class="text-body-tertiary me-3">C-5000</span>
+                                        22%
+                                    </div>
+                                    <div>53.3</div>
+                                </div>
+                                <div class="comp-widget border-danger border-opacity-50 mb-4">
+                                    <div>
+                                        <span class="text-body-tertiary me-3">A-0002</span>
+                                        18%
+                                    </div>
+                                    <div>4.87</div>
+                                </div>
+                                <div class="comp-widget border-info mb-4">
+                                    <div>
+                                        <span class="text-body-tertiary me-3">A-3200</span>
+                                        10%
+                                    </div>
+                                    <div>3.03</div>
+                                </div>
+                                <div class="comp-widget border-dark-subtle mb-4">
+                                    <div>
+                                        <span class="text-body-tertiary me-3">A-5002</span>
+                                        6%
+                                    </div>
+                                    <div>2.07</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <div class="card shadow">
+                                    <div class="card-header no-arrow">
+                                        <h6 class="mb-0">생산량 비교</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="fs-xs">7,406,000￦</div>
+                                            <div class="fs-xs">10,000,000￦</div>
+                                        </div>
+                                        <div class="progress w-100" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px">
+                                            <div class="progress-bar bg-point" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="card shadow">
+                                    <div class="card-header no-arrow">
+                                        <h6 class="mb-0">월간 이익 성과</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between mb-2">
+                                            <div class="fs-xs">3,320,000￦</div>
+                                            <div class="fs-xs">6,000,000￦</div>
+                                        </div>
+                                        <div class="progress w-100" role="progressbar" aria-label="Example 1px high"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
+                                            style="height: 8px">
+                                            <div class="progress-bar bg-point" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="card shadow">
+                                    <div class="card-header no-arrow">
+                                        <h6 class="mb-0">생산규모 대비 이익률</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center justify-content-center py-3">
+                                            Graph
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                        <div class="card shadow">
+                            <div class="card-header no-arrow">
+                                <h6 class="mb-0">기기 이상감지</h6>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-center justify-content-center py-5 my-5">
+                                    chart
+                                </div>
+                                <hr class="my-4 opacity-10">
+                                <div>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="fs-sm">
+                                            <span class="text-body-tertiary me-3">A-3200</span>외부기온 이상
+                                        </div>
+                                        <div class="fs-sm">14시간 전</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <div class="fs-sm">
+                                            <span class="text-body-tertiary me-3">A-0002</span>기기내부 과열
+                                        </div>
+                                        <div class="fs-sm">1일 전</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="fs-sm">
+                                            <span class="text-body-tertiary me-3">A-1021</span>외부기온 이상
+                                        </div>
+                                        <div class="fs-sm">4일 전</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </main>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="vendor/chart.js/Chart.min.js"></script>
     <script type="text/javascript" src="js/demo/chart-bar-demo.js"></script>
     <script type="text/javascript" src="js/demo/chart-pie-demo.js"></script>
 </body>
+
 </html>

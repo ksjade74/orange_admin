@@ -27,8 +27,8 @@ a:hover {
     text-decoration: none;
 }
 .text-point {color: var(--point-clr);}
-.bg-point {background-color: var(--point-clr);}
-.border-orange {border-color: var(--orange-clr);}
+.bg-point {background-color: var(--point-clr) !important;}
+.border-point {border-color: var(--point-clr) !important;}
 
 
 .navbar {
@@ -146,7 +146,7 @@ a:hover {
     top: 0;
     width: var(--sidebar-w);
     min-width: var(--sidebar-w);
-    padding-top: 70px;
+    padding-top: 0;
     height: 100vh;
     background-color: #fff;
     transition: all .3s ease-in-out;
@@ -179,9 +179,8 @@ li .sidebar-link > img {
     filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(651%) hue-rotate(75deg) brightness(97%) contrast(94%);
 }
 li .sidebar-link:hover {
-    color: var(--hover-clr);
-    background-color: var(--hoverbg-clr);
-    border-left: 3px solid var(--line-clr);
+    color: var(--point-clr);
+    border-left: 3px solid var(--point-clr);
 }
 .sidebar-dropdown .sidebar-link.active,
 li .sidebar-link.active > span,
@@ -276,6 +275,10 @@ span.w-1 {width: 7%;}
     border: 0;
 }
 
+.nav-link {
+    color: #888;
+}
+
 .opacity-10 {opacity: .1;}
 
 .text-info {color: rgb(18, 168, 255) !important;}
@@ -297,15 +300,15 @@ span.w-1 {width: 7%;}
 .text-gray-700 {color: #6e707e !important;}  
 .text-gray-800 {color: #5a5c69 !important;}  
 .text-gray-900 {color: #3a3b45 !important;}
-.bg-gray-100 {color: #f8f9fc !important;}  
-.bg-gray-200 {color: #eaecf4 !important;}  
-.bg-gray-300 {color: #dddfeb !important;}  
-.bg-gray-400 {color: #d1d3e2 !important;}  
-.bg-gray-500 {color: #b7b9cc !important;}  
-.bg-gray-600 {color: #858796 !important;}  
-.bg-gray-700 {color: #6e707e !important;}  
-.bg-gray-800 {color: #5a5c69 !important;}  
-.bg-gray-900 {color: #3a3b45 !important;}
+.bg-gray-100 {background-color: #f8f9fc !important;}  
+.bg-gray-200 {background-color: #eaecf4 !important;}  
+.bg-gray-300 {background-color: #dddfeb !important;}  
+.bg-gray-400 {background-color: #d1d3e2 !important;}  
+.bg-gray-500 {background-color: #b7b9cc !important;}  
+.bg-gray-600 {background-color: #858796 !important;}  
+.bg-gray-700 {background-color: #6e707e !important;}  
+.bg-gray-800 {background-color: #5a5c69 !important;}  
+.bg-gray-900 {background-color: #3a3b45 !important;}
 
 
 
