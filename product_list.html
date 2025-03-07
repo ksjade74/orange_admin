@@ -95,29 +95,24 @@
                     </a>
                     <ul id="member" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="member.html" class="sidebar-link">
-                                프로필
-                            </a>
+                            <a href="member.html" class="sidebar-link">프로필</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="member-list.html" class="sidebar-link">
-                                회원목록
-                            </a>
+                            <a href="member-list.html" class="sidebar-link">회원목록</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="login.html" class="sidebar-link">로그인</a>
-                            <a href="signin.html" class="sidebar-link">회원가입</a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false">
+                    <a href="#" class="sidebar-link has-dropdown collapsed active" data-bs-toggle="collapse" data-bs-target="#product" aria-expanded="false">
                         <img src="./icons/line/Ecommerce.svg" width="20" class="me-3" alt="">
                         <span>제품관리</span>
                     </a>
                     <ul id="product" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="product_list.html" class="sidebar-link">제품목록</a>
+                            <a href="product_list.html" class="sidebar-link active">제품목록</a>
                         </li>
                         <li class="sidebar-item">
                             <a href="product_detail.html" class="sidebar-link">제품상세</a>
@@ -125,20 +120,10 @@
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#table" aria-expanded="false">
+                    <a href="table_default.html" class="sidebar-link">
                         <img src="./icons/line/Tables.svg" width="20" class="me-3" alt="">
                         <span>테이블</span>
                     </a>
-                    <ul id="table" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="table_default.html" class="sidebar-link">
-                               기본 테이블
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="table_status.html" class="sidebar-link">상태 테이블</a>
-                        </li>
-                    </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#login" aria-expanded="false">
@@ -147,17 +132,17 @@
                     </a>
                     <ul id="login" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                         <li class="sidebar-item">
-                            <a href="mail-write.html" class="sidebar-link">메일쓰기</a>
+                            <a href="mail_write.html" class="sidebar-link">메일쓰기</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="mail-folder.html" class="sidebar-link">메일함</a>
+                            <a href="mail_list.html" class="sidebar-link">메일함</a>
                         </li>
                     </ul>
                 </li>
                 <li class="sidebar-item">
-                    <a href="./widgets.html" class="sidebar-link">
-                        <img src="./icons/line/Widget.svg" width="20" class="me-3" alt="">
-                        <span>위젯</span>
+                    <a href="./404.html" class="sidebar-link">
+                        <img src="./icons/line/Caution.svg" width="20" class="me-3" alt="">
+                        <span>404</span>
                     </a>
                 </li>
             </ul><!--//sidebar-nav -->
@@ -184,7 +169,7 @@
             <div class="p-4 products">     
                 <div class="d-flex justify-content-start align-items-center mb-4">
                     <div class="d-flex text-dark">제품 정보</div>
-                    <form class="d-none d-lg-inline-block form-inline ms-3 navbar-search" style="padding-left: 35px;">
+                    <form class="d-none d-lg-inline-block form-inline ms-3 navbar-search" style="padding-left: 30px;">
                         <div class="input-group input-group-sm position-relative">
                             <img src="./icons/line/Search.svg" width="18" class="svg-dark" alt="">
                             <input type="text" class="form-control small rounded" placeholder="검색" aria-label="Search" aria-describedby="basic-addon">
@@ -199,9 +184,9 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
-                                <div class="calc-box bg-danger text-danger bg-opacity-25 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div>
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
+                                <div class="calc-box bg-danger text-danger bg-opacity-10 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div>
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>
                             <div class="card-body py-0">
@@ -231,8 +216,8 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
                                 <div class="calc-box bg-opacity-25 fs-sm"></div>
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>
@@ -263,8 +248,8 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
                                 <div class="calc-box bg-opacity-25 fs-sm"></div>
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>
@@ -295,9 +280,9 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
-                                <div class="calc-box bg-danger text-danger bg-opacity-25 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div> 
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
+                                <div class="calc-box bg-danger text-danger bg-opacity-10 fs-sm"><i class="fa-solid fa-triangle-exclamation me-1"></i>이상감지</div> 
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>
                             <div class="card-body py-0">
@@ -327,8 +312,8 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
                                 <div class="calc-box bg-opacity-25 fs-sm"></div>
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>
@@ -359,8 +344,8 @@
                         </div>
                     </div><!-- col -->
                     <div class="col-lg-4 mb-4">
-                        <div class="card shadow px-lg-3 py-2">
-                            <div class="card-header align-items-center">
+                        <div class="card shadow px-lg-3 pb-4">
+                            <div class="card-header align-items-center pb-3">
                                 <div class="calc-box bg-opacity-25 fs-sm"></div>
                                 <i class="fa-solid fa-ellipsis-h fa-fw text-gray-400"></i>
                             </div>

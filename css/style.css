@@ -143,7 +143,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 0;
+    top: 70px;
     width: var(--sidebar-w);
     min-width: var(--sidebar-w);
     padding-top: 0;
@@ -154,12 +154,9 @@ a:hover {
     z-index: 10;
 }
 #sidebar .sidebar-nav {
+    margin-bottom: auto;
     padding: 0;
     list-style: none;
-}
-.sidebar-nav {
-    flex: 1 1 auto;
-    padding: 2rem 0;
 }
 li.sidebar-item {
     position: relative;
@@ -255,7 +252,6 @@ span.w-1 {width: 7%;}
 .table thead th {
     padding: 1rem .5rem;
     font-weight: normal;
-    border: 0;
     background-color: #F8FBFD;
     white-space: nowrap;
 }
@@ -270,6 +266,12 @@ span.w-1 {width: 7%;}
 .table tbody td {
     text-align: center;
 }
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: stripe;
+    background-color: #F8FBFD;
+}
+
+
 .pagination li a {
     color: #666;
     border: 0;
