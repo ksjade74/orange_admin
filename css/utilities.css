@@ -295,8 +295,9 @@
   .pb-lg-7, .py-lg-7 {padding-bottom: 6rem !important;}
   .pb-lg-8, .py-lg-8 {padding-bottom: 7.5rem !important;}
   .pb-lg-9, .py-lg-9 {padding-bottom: 9rem !important;}
-  .pb-lg-10, .py-lg-10 {padding-bottom: 10rem;} !important  
+  .pb-lg-10, .py-lg-10 {padding-bottom: 10rem !important;} 
 }
+
 @media (min-width: 1200px) {
   .mt-xl-6, .my-xl-6 {margin-top: 4.5rem !important;}
   .mt-xl-7, .my-xl-7 {margin-top: 6rem !important;}
@@ -317,5 +318,5 @@
   .pb-xl-7, .py-xl-7 {padding-bottom: 6rem !important;}
   .pb-xl-8, .py-xl-8 {padding-bottom: 7.5rem !important;}
   .pb-xl-9, .py-xl-9 {padding-bottom: 9rem !important;}
-  .pb-xl-10, .py-xl-10 {padding-bottom: 10rem;} !important  
+  .pb-xl-10, .py-xl-10 {padding-bottom: 10rem !important;} 
 }
