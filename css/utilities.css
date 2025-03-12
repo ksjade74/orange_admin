@@ -1,0 +1,321 @@
+/* 
+* 20250312 / KSODESIGN Style Guide
+* color
+* font size
+* 
+* 
+* 
+* 
+*/
+:root {
+  --main-rgb: 0, 255, 251;
+  --sub-rgb: 108, 117, 125;
+  --red-rgb: 255, 84, 55;
+  --blue-rgb: 18, 168, 255;
+  --green-rgb: 10, 207, 131;
+  --yellow-rgb: 255, 204, 0;
+  --orange-rgb: 255, 143, 46;
+  --purple-rgb: 111, 66, 193;
+  --pink-rgb: 255, 55, 95;
+  --cyan-rgb: 0, 188, 212;
+  --teal-rgb: 32, 201, 151;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+  --text-opacity: 1;
+  --border-opacity: 1;
+}
+
+/***************************************************
+*
+* color scheme
+*
+****************************************************/
+.text-main {
+  color: rgba(var(--main-rgb), var(--text-opacity)) !important;
+}
+.text-sub {
+  color: rgba(var(--sub-rgb), var(--text-opacity)) !important;
+}
+.text-red {
+  color: rgba(var(--red-rgb), var(--text-opacity)) !important;
+}
+.text-blue {
+  color: rgba(var(--blue-rgb), var(--text-opacity)) !important;
+}
+.text-green {
+  color: rgba(var(--green-rgb), var(--text-opacity)) !important;
+}
+.text-yellow {
+  color: rgba(var(--yellow-rgb), var(--text-opacity)) !important;
+}
+.text-orange {
+  color: rgba(var(--orange-rgb), var(--text-opacity)) !important;
+}
+
+/* =================== gray =================== */
+.gray-100 {
+  color: var(--gray-100) !important;
+}
+.gray-200 {
+  color: var(--gray-200) !important;
+}
+.gray-300 {
+  color: var(--gray-300) !important;
+}
+.gray-400 {
+  color: var(--gray-400) !important;
+}
+.gray-500 {
+  color: var(--gray-500) !important;
+}
+.gray-600 {
+  color: var(--gray-600) !important;
+}
+.gray-700 {
+  color: var(--gray-700) !important;
+}
+.gray-800 {
+  color: var(--gray-800) !important;
+}
+.gray-900 {
+  color: var(--gray-900) !important;
+}
+
+.bg-gray-100 {
+  background-color: var(--gray-100) !important;
+}
+.bg-gray-200 {
+  background-color: var(--gray-200) !important;
+}
+.bg-gray-300 {
+  background-color: var(--gray-300) !important;
+}
+.bg-gray-400 {
+  background-color: var(--gray-400) !important;
+}
+.bg-gray-500 {
+  background-color: var(--gray-500) !important;
+}
+.bg-gray-600 {
+  background-color: var(--gray-600) !important;
+}
+.bg-gray-700 {
+  background-color: var(--gray-700) !important;
+}
+.bg-gray-800 {
+  background-color: var(--gray-800) !important;
+}
+.bg-gray-900 {
+  background-color: var(--gray-900) !important;
+}
+
+/* =================== bg color =================== */
+.bg-main {
+  background-color: rgba(var(--main-rgb), var(--bg-opacity)) !important;
+}
+.bg-sub {
+  background-color: rgba(var(--sub-rgb), var(--bg-opacity)) !important;
+}
+.bg-red {
+  background-color: rgba(var(--red-rgb), var(--bg-opacity)) !important;
+}
+.bg-blue {
+  background-color: rgba(var(--blue-rgb), var(--bg-opacity)) !important;
+}
+.bg-green {
+  background-color: rgba(var(--green-rgb), var(--bg-opacity)) !important;
+}
+.bg-yellow {
+  background-color: rgba(var(--yellow-rgb), var(--bg-opacity)) !important;
+}
+.bg-orange {
+  background-color: rgba(var(--orange-rgb), var(--bg-opacity)) !important;
+}
+
+/* =================== text opacity =================== */
+.text-opacity-90 {
+  --text-opacity: 0.9;
+}
+.text-opacity-80 {
+  --text-opacity: 0.8;
+}
+.text-opacity-70 {
+  --text-opacity: 0.7;
+}
+.text-opacity-60 {
+  --text-opacity: 0.6;
+}
+.text-opacity-50 {
+  --text-opacity: 0.5;
+}
+.text-opacity-40 {
+  --text-opacity: 0.4;
+}
+.text-opacity-30 {
+  --text-opacity: 0.3;
+}
+.text-opacity-20 {
+  --text-opacity: 0.2;
+}
+.text-opacity-10 {
+  --text-opacity: 0.1;
+}
+
+/* =================== bg opacity =================== */
+.bg-opacity-90 {
+  --bg-opacity: 0.9;
+}
+.bg-opacity-80 {
+  --bg-opacity: 0.8;
+}
+.bg-opacity-70 {
+  --bg-opacity: 0.7;
+}
+.bg-opacity-60 {
+  --bg-opacity: 0.6;
+}
+.bg-opacity-50 {
+  --bg-opacity: 0.5;
+}
+.bg-opacity-40 {
+  --bg-opacity: 0.4;
+}
+.bg-opacity-30 {
+  --bg-opacity: 0.3;
+}
+.bg-opacity-20 {
+  --bg-opacity: 0.2;
+}
+.bg-opacity-10 {
+  --bg-opacity: 0.1;
+}
+
+/***************************************************
+*
+* font size scheme 
+* 
+* display-1 .fs-80 5rem
+* display-2 .fs-72 4.5rem
+* display-3 .fs-64 4rem
+* display-4 .fs-56 3.5rem
+* display-5 .fs-48 3rem
+* display-6 .fs-40 2.5rem
+* h1 .fs-1 .fs-40 2.5rem
+* h2 .fs-2 .fs-32 2rem
+* h3 .fs-3 .fs-28 1.75rem
+* h4 .fs-4 .fs-24 1.5rem
+* h5 .fs-5 .fs-20 1.25rem
+* h6 .fs-6 .fs-16 1rem
+* small .fs-12 .875rem
+*
+****************************************************/
+.fs-12 {font-size: 0.75rem;}
+.fs-13 {font-size: 0.8125rem;}
+.fs-14 {font-size: 0.875rem;}
+.fs-15 {font-size: 0.9375rem;}
+.fs-16 {font-size: 1rem;}
+.fs-17 {font-size: 1.0625rem;}
+.fs-18 {font-size: 1.125rem;}
+.fs-19 {font-size: 1.1875rem;}
+.fs-20 {font-size: 1.25rem;}
+
+.fs-21 {font-size: calc(1.260rem + .1vw);}
+.fs-22 {font-size: calc(1.270rem + .1vw);}
+.fs-23 {font-size: calc(1.275rem + .1vw);}
+.fs-24 {font-size: calc(1.28rem + .2vw);}
+.fs-25 {font-size: calc(1.285rem + .3vw);}
+.fs-26 {font-size: calc(1.29rem + .4vw);}
+.fs-27 {font-size: calc(1.295rem + .5vw);}
+.fs-28 {font-size: calc(1.3rem + .6vw);}
+.fs-29 {font-size: calc(1.305rem + .6vw);}
+.fs-30 {font-size: calc(1.31rem + .7vw);}
+.fs-31 {font-size: calc(1.315rem + .8vw);}
+.fs-32 {font-size: calc(1.325rem + .9vw);}
+.fs-33 {font-size: calc(1.33rem + 1vw);}
+.fs-34 {font-size: calc(1.335rem + 1vw);}
+.fs-35 {font-size: calc(1.34rem + 1.1vw);}
+.fs-36 {font-size: calc(1.345rem + 1.2vw);}
+.fs-37 {font-size: calc(1.35rem + 1.3vw);}
+.fs-38 {font-size: calc(1.355rem + 1.4vw);}
+.fs-39 {font-size: calc(1.36rem + 1.5vw);}
+.fs-40 {font-size: calc(1.375rem + 1.5vw);}
+
+@media (min-width: 1200px) {
+  .fs-21 {font-size: 1.3125rem;}
+  .fs-22 {font-size: 1.375rem;}
+  .fs-23 {font-size: 1.4375rem;}
+  .fs-24 {font-size: 1.5rem;}
+  .fs-25 {font-size: 1.5625rem;}
+  .fs-26 {font-size: 1.625rem;}
+  .fs-27 {font-size: 1.6875rem;}
+  .fs-28 {font-size: 1.75rem;}
+  .fs-29 {font-size: 1.8125rem;}
+  .fs-30 {font-size: 1.875rem;}
+  .fs-31 {font-size: 1.9375rem;}
+  .fs-32 {font-size: 2rem;}
+  .fs-33 {font-size: 2.0625rem;}
+  .fs-34 {font-size: 2.125rem;}
+  .fs-35 {font-size: 2.1875rem;}
+  .fs-36 {font-size: 2.25rem;}
+  .fs-37 {font-size: 2.3125rem;}
+  .fs-38 {font-size: 2.375rem;}
+  .fs-39 {font-size: 2.4375rem;}    
+  .fs-40 {font-size: 2.5rem;}
+}
+
+/***************************************************
+*
+* spacing scheme
+*
+****************************************************/
+@media (min-width: 992px) {
+  .mt-lg-6, .my-lg-6 {margin-top: 4.5rem !important;}
+  .mt-lg-7, .my-lg-7 {margin-top: 6rem !important;}
+  .mt-lg-8, .my-lg-8 {margin-top: 7.5rem !important;}
+  .mt-lg-9, .my-lg-9 {margin-top: 9rem !important;}
+  .mt-lg-10, .my-lg-10 {margin-top: 10rem !important;}
+  .mb-lg-6, .my-lg-6 {margin-bottom: 4.5rem !important ;}
+  .mb-lg-7, .my-lg-7 {margin-bottom: 6rem !important ;}
+  .mb-lg-8, .my-lg-8 {margin-bottom: 7.5rem !important ;}
+  .mb-lg-9, .my-lg-9 {margin-bottom: 9rem !important ;}
+  .mb-lg-10, .my-lg-10 {margin-bottom: 10rem !important ;}
+  .pt-lg-6, .py-lg-6 {padding-top: 4.5rem !important ;}
+  .pt-lg-7, .py-lg-7 {padding-top: 6rem !important ;}
+  .pt-lg-8, .py-lg-8 {padding-top: 7.5rem !important ;}
+  .pt-lg-9, .py-lg-9 {padding-top: 9rem !important ;}
+  .pt-lg-10, .py-lg-10 {padding-top: 10rem !important ;}
+  .pb-lg-6, .py-lg-6 {padding-bottom: 4.5rem !important;}
+  .pb-lg-7, .py-lg-7 {padding-bottom: 6rem !important;}
+  .pb-lg-8, .py-lg-8 {padding-bottom: 7.5rem !important;}
+  .pb-lg-9, .py-lg-9 {padding-bottom: 9rem !important;}
+  .pb-lg-10, .py-lg-10 {padding-bottom: 10rem;} !important  
+}
+@media (min-width: 1200px) {
+  .mt-xl-6, .my-xl-6 {margin-top: 4.5rem !important;}
+  .mt-xl-7, .my-xl-7 {margin-top: 6rem !important;}
+  .mt-xl-8, .my-xl-8 {margin-top: 7.5rem !important;}
+  .mt-xl-9, .my-xl-9 {margin-top: 9rem !important;}
+  .mt-xl-10, .my-xl-10 {margin-top: 10rem !important;}
+  .mb-xl-6, .my-xl-6 {margin-bottom: 4.5rem !important ;}
+  .mb-xl-7, .my-xl-7 {margin-bottom: 6rem !important ;}
+  .mb-xl-8, .my-xl-8 {margin-bottom: 7.5rem !important ;}
+  .mb-xl-9, .my-xl-9 {margin-bottom: 9rem !important ;}
+  .mb-xl-10, .my-xl-10 {margin-bottom: 10rem !important ;}
+  .pt-xl-6, .py-xl-6 {padding-top: 4.5rem !important ;}
+  .pt-xl-7, .py-xl-7 {padding-top: 6rem !important ;}
+  .pt-xl-8, .py-xl-8 {padding-top: 7.5rem !important ;}
+  .pt-xl-9, .py-xl-9 {padding-top: 9rem !important ;}
+  .pt-xl-10, .py-xl-10 {padding-top: 10rem !important ;}
+  .pb-xl-6, .py-xl-6 {padding-bottom: 4.5rem !important;}
+  .pb-xl-7, .py-xl-7 {padding-bottom: 6rem !important;}
+  .pb-xl-8, .py-xl-8 {padding-bottom: 7.5rem !important;}
+  .pb-xl-9, .py-xl-9 {padding-bottom: 9rem !important;}
+  .pb-xl-10, .py-xl-10 {padding-bottom: 10rem;} !important  
+}
