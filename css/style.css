@@ -270,7 +270,9 @@ span.w-1 {width: 7%;}
     --bs-table-bg-type: stripe;
     background-color: #F8FBFD;
 }
-
+.table-hover>tbody>tr:hover>* {
+    --bs-table-bg-state: #F6FAFC;
+  }
 
 .pagination li a {
     color: #666;

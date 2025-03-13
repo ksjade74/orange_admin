@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/widgets.css">
-
+    <link rel="stylesheet" href="css/utilities.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg main-header shadow-sm py-0">
@@ -29,39 +29,11 @@
                 </form>
                 <ul class="navbar-nav mb-0">
                     <li class="nav-item dropdown no-arrow d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="mail_list.html">
                             <img src="./icons/line/E-mail.svg" width="24" class="svg-light" alt="">
                             <span class="badge badge-counter rounded-pill bg-danger">1+</span>
-                        </a>
-                        <div class="dropdown-list dropdown-menu dropdown-menu-end shadow-sm py-0"
-                            aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header">알림 센터</h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="icon-circle bg-primary">
-                                        <i class="fa-solid fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">2024. 10. 20</div>
-                                    <span>이번 달 보고서 다운로드</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="icon-circle bg-warning">
-                                        <i class="fa-solid fa-triangle-exclamation text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">2024. 10. 21</div>
-                                    <span>경고</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-600" href="#">모든 알림 보기</a>
-                        </div>
-                    </li>  
+                        </a>                        
+                    </li>
                     <li class="nav-item dropdown no-arrow">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="./icons/line/Member.svg" width="24" class="svg-light" alt="">
@@ -200,43 +172,100 @@
                         </div>
                         <div class="d-flex">
                             <div class="card flex-fill shadow mb-4 me-2">
-                                <a href="#" class="btn py-3 bg-point d-flex justify-content-center align-items-center text-light">
+                                <a href="#" class="btn py-2 bg-orange d-flex justify-content-center align-items-center text-light">
                                     <img src="./icons/line/E-mail.svg" class="svg-light me-3" alt="">메일 보내기
                                 </a>
                             </div>
                             <div class="card flex-fill shadow mb-4 ms-2">
-                                <a href="#" class="btn py-3 d-flex justify-content-center align-items-center text-point">
+                                <a href="#" class="btn py-2 d-flex justify-content-center align-items-center text-orange">
                                     <img src="./icons/line/E-mail.svg" class="me-3" alt="">업무일지 작성
                                 </a>
                             </div>
                         </div>   
                         <div class="card shadow mb-4">
                             <div class="card-header">
-                                <h6 class="text-dark">근무시간</h6>
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
-                                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
-                                </ul>
+                                <h6 class="mb-0">근무시간</h6>
                             </div>
                             <div class="card-body d-flex justify-content-between align-items-center">
                                 <div class="w-100">
                                     <div class="w-100 mb-2 d-flex justify-content-between fs-sm">
-                                        <span>8h 20m</span>
-                                        <span>2025년 2월 24일 (수)</span>
+                                        <span class="text-gray-600">8h 20m</span>
+                                        <span class="text-gray-600">2025년 2월 24일 (수)</span>
                                     </div>
                                     <div class="progress w-100" role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 8px">
-                                        <div class="progress-bar bg-point" style="width: 90%"></div>
+                                        <div class="progress-bar bg-point" style="width: 80%"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>                   
                     </div>
                     <div class="col-lg-8">
+                        <div class="card shadow mb-4">
+                            <div class="card-header text-gray-700">
+                                <h6 class="mb-0">관리 장치</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex p-3 border border-subtle rounded-3 mb-4">
+                                    <div class="p-5 bg-dark-subtle rounded-2 me-3"></div>
+                                    <div class="w-100">
+                                        <h6 class="fs-sm text-orange">인버터</h6>
+                                        <p class="fs-sm mb-0 text-gray-900">A-1021</p>
+                                        <hr class="my-2 opacity-10">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fs-xs text-gray-700">금일 발전량</span>
+                                            <span class="fs-xs">11.3kW</span>
+                                            <span class="fs-xs text-gray-500">제 조 사: energy sol</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="fs-xs text-gray-700">누적 발전량</span>
+                                            <span class="fs-xs">500kW</span>
+                                            <span class="fs-xs text-gray-500">번    호: 110-001100-11</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex p-3 border border-subtle rounded-3">
+                                    <div class="p-5 bg-dark-subtle rounded-2 me-3"></div>
+                                    <div class="w-100">
+                                        <h6 class="fs-sm text-orange">인버터</h6>
+                                        <p class="fs-sm mb-0 text-gray-900">A-1021</p>
+                                        <hr class="my-2 opacity-10">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="fs-xs text-gray-700">금일 발전량</span>
+                                            <span class="fs-xs">11.3kW</span>
+                                            <span class="fs-xs text-gray-500">제 조 사: energy sol</span>
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-2">
+                                            <span class="fs-xs text-gray-700">누적 발전량</span>
+                                            <span class="fs-xs">500kW</span>
+                                            <span class="fs-xs text-gray-500">번    호: 110-001100-11</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="card shadow mb-4">
+                            <div class="card-header">
+                                <h6 class="text-dark">사용자 권한</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between2 align-items-center w-100">
+                                    <div class="d-flex align-items-center w-25">
+                                        <input class="form-check-input mt-0 me-2" type="checkbox" value="" checked> 이름    
+                                    </div>
+                                    <div class="d-flex align-items-center w-25">
+                                        <input class="form-check-input mt-0 me-2" type="checkbox" value="" checked> 전화번호    
+                                    </div>
+                                    <div class="d-flex align-items-center w-25">
+                                        <input class="form-check-input mt-0 me-2" type="checkbox" value=""> 주소    
+                                    </div>
+                                    <div class="d-flex align-items-center w-25">
+                                        <input class="form-check-input mt-0 me-2" type="checkbox" value=""> 활동내역    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                         
+                    </div>
+                    <div class="col-lg-12">
                         <div class="card shadow mb-4">
                             <div class="card-header">
                                 <h6 class="ps-2 pt-3">공지사항 </h6>
@@ -258,144 +287,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
-                        <div class="card shadow mb-4">
-                            <div class="card-header">
-                                <h6 class="text-dark">사용자 권한</h6>
-                            </div>
-                            <div class="card-body d-flex justify-content-between align-items-center">
-                                <table class="table table-hover text-start fs-sm border-top">
-                                    <tbody>
-                                        <tr>
-                                            <th class="py-3 bg-body-tertiary">정보</th>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 이름    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 전화번호    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 주소    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 활동내역    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="py-3 bg-body-tertiary">수정권한</th>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 제품정보    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 일련번호    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 사용자계정관리    
-                                            </td>
-                                            <td class="text-start">   
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="py-3 bg-body-tertiary">접근권한</th>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 사용량    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value="" checked> 생산량    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 통계보고    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 게시판    
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th class="py-3 bg-body-tertiary">거래내역</th>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 정산내역    
-                                            </td>
-                                            <td class="text-start">
-                                                <input class="form-check-input mt-0" type="checkbox" value=""> 입금명세서    
-                                            </td>
-                                            <td class="text-start">   
-                                            </td>
-                                            <td class="text-start">   
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div> 
-                        <div class="card shadow mb-4">
-                            <div class="card-header text-gray-700">
-                                <h6 class="text-dark">관리 장치</h6>
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-h fa-sm fa-fw text-gray-400"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-end shadow-sm">
-                                    <li><a class="dropdown-item text-gray-600" href="#">Action</a></li>
-                                    <li><a class="dropdown-item text-gray-600" href="#">Another Action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-gray-600" href="#">Sometin else here</a></li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex p-3 border border-subtle rounded-3 mb-4">
-                                    <div class="p-5 bg-dark-subtle rounded-2 me-3"></div>
-                                    <div class="w-100">
-                                        <h6 class="fs-sm text-point">인버터</h6>
-                                        <p class="fs-sm mb-0 text-gray-900">A-1021</p>
-                                        <hr class="my-2 opacity-10">
-                                        <div class="d-flex justify-content-between">
-                                            <span class="fs-xs text-gray-700">금일 발전량</span>
-                                            <span class="fs-xs">11.3kW</span>
-                                            <span class="fs-xs text-gray-500">제 조 사: energy sol</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <span class="fs-xs text-gray-700">누적 발전량</span>
-                                            <span class="fs-xs">500kW</span>
-                                            <span class="fs-xs text-gray-500">번    호: 110-001100-11</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex p-3 border border-subtle rounded-3 mb-4">
-                                    <div class="p-5 bg-dark-subtle rounded-2 me-3"></div>
-                                    <div class="w-100">
-                                        <h6 class="fs-sm text-point">인버터</h6>
-                                        <p class="fs-sm mb-0 text-gray-900">A-1021</p>
-                                        <hr class="my-2 opacity-10">
-                                        <div class="d-flex justify-content-between">
-                                            <span class="fs-xs text-gray-700">금일 발전량</span>
-                                            <span class="fs-xs">11.3kW</span>
-                                            <span class="fs-xs text-gray-500">제 조 사: energy sol</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <span class="fs-xs text-gray-700">누적 발전량</span>
-                                            <span class="fs-xs">500kW</span>
-                                            <span class="fs-xs text-gray-500">번    호: 110-001100-11</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex p-3 border border-subtle rounded-3">
-                                    <div class="p-5 bg-dark-subtle rounded-2 me-3"></div>
-                                    <div class="w-100">
-                                        <h6 class="fs-sm text-point">인버터</h6>
-                                        <p class="fs-sm mb-0 text-gray-900">A-1021</p>
-                                        <hr class="my-2 opacity-10">
-                                        <div class="d-flex justify-content-between">
-                                            <span class="fs-xs text-gray-700">금일 발전량</span>
-                                            <span class="fs-xs">11.3kW</span>
-                                            <span class="fs-xs text-gray-500">제 조 사: energy sol</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between mt-2">
-                                            <span class="fs-xs text-gray-700">누적 발전량</span>
-                                            <span class="fs-xs">500kW</span>
-                                            <span class="fs-xs text-gray-500">번    호: 110-001100-11</span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div> 
                     </div>

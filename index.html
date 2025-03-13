@@ -35,38 +35,10 @@
                 </form>
                 <ul class="navbar-nav mb-0">
                     <li class="nav-item dropdown no-arrow d-none d-lg-block">
-                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link" href="mail_list.html">
                             <img src="./icons/line/E-mail.svg" width="24" class="svg-light" alt="">
                             <span class="badge badge-counter rounded-pill bg-danger">1+</span>
-                        </a>
-                        <div class="dropdown-list dropdown-menu dropdown-menu-end shadow-sm py-0"
-                            aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header">알림 센터</h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="icon-circle bg-primary">
-                                        <i class="fa-solid fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">2024. 10. 20</div>
-                                    <span>이번 달 보고서 다운로드</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="me-3">
-                                    <div class="icon-circle bg-warning">
-                                        <i class="fa-solid fa-triangle-exclamation text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">2024. 10. 21</div>
-                                    <span>경고</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-600" href="#">모든 알림 보기</a>
-                        </div>
+                        </a>                        
                     </li>
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -189,22 +161,22 @@
                             <div class="card-header">
                                 <h6 class="mb-0">시간대 예상 발전량</h6>
                                 <div class="d-flex fs-xs">
-                                    <div class="bg-primary bg-opacity-10 rounded-1 py-1 px-2">사용 전력 6,012</div>
-                                    <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">예상 생산 7,521</div>
-                                    <div class="bg-danger bg-opacity-10 ms-2 rounded-1 py-1 px-2">현재 생산 7,032</div>
+                                    <div class="bg-blue bg-opacity-10 rounded-1 py-1 px-2">사용 전력 6,012</div>
+                                    <div class="bg-red bg-opacity-10 ms-2 rounded-1 py-1 px-2">예상 생산 7,521</div>
+                                    <div class="bg-red bg-opacity-10 ms-2 rounded-1 py-1 px-2">현재 생산 7,032</div>
                                 </div>
                             </div>
                             <div class="card-body">
-                                <div class="chart-bar">
-                                    <canvas id="barChart"></canvas>
-                                </div>
+                                <div class="d-flex flex-column w-100 h-100">
+                                    Chart Area
+                                </div>                                
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="card shadow mb-4">
                             <div class="card-header text-gray-700 pb-0">
-                                <div>전날출력 비교</div>
+                                <h6 class="mb-0">전날출력 비교</h6>
                                 <div>kw</div>
                             </div>
                             <div class="card-body d-flex justify-content-between align-items-center">
@@ -214,7 +186,7 @@
                         </div>
                         <div class="card shadow mb-4">
                             <div class="card-header text-gray-700 pb-0">
-                                <div>현재 출력량</div>
+                                <h6 class="mb-0">현재 출력량</h6>
                                 <div>kw</div>
                             </div>
                             <div class="card-body d-flex justify-content-between align-items-center">
@@ -224,7 +196,7 @@
                         </div>
                         <div class="card shadow mb-4">
                             <div class="card-header text-gray-700 pb-0">
-                                <div>남은 발전량</div>
+                                <h6 class="mb-0">남은 발전량</h6>
                                 <div>kw</div>
                             </div>
                             <div class="card-body d-flex justify-content-between align-items-center">
@@ -238,7 +210,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4"> 
                         <div class="card shadow">
                             <div class="card-header no-arrow">
                                 <h6 class="mb-0">인버터별 출력량</h6>
@@ -256,12 +228,9 @@
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <div class="chart-pie pt-4">
-                                    <canvas id="pieChart"></canvas>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-center py-5 my-2">
-                                    empty
-                                </div>
+                                <div class="d-flex flex-column w-100 h-100">
+                                    Chart Area
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -269,7 +238,7 @@
                         <div class="card shadow">
                             <div class="card-header">
                                 <h6 class="mb-0">인버터 정보</h6>
-                                <a href="#" class="bg-danger bg-opacity-10 text-danger fs-xs rounded-1 py-1 px-2"><img
+                                <a href="#" class="bg-red bg-opacity-10 text-red fs-xs rounded-1 py-1 px-2"><img
                                         src="./icons/line/Caution.svg" width="14" alt=""> 이상감지되는 인버터가 있습니다.</a>
                             </div>
                             <div class="card-body">
@@ -351,11 +320,11 @@
                             </div>
                             <div class="card-body">
                                 <div class="position-relative d-flex h-10 mb-5">
-                                    <span class="w-5 bg-point"></span>
-                                    <span class="w-4 bg-warning"></span>
-                                    <span class="w-3 bg-danger bg-opacity-50"></span>
-                                    <span class="w-2 bg-info"></span>
-                                    <span class="w-1 bg-dark-subtle"></span>
+                                    <span class="w-5 bg-orange"></span>
+                                    <span class="w-4 bg-yellow"></span>
+                                    <span class="w-3 bg-red bg-opacity-90"></span>
+                                    <span class="w-2 bg-blue bg-opacity-20"></span>
+                                    <span class="w-1 bg-gray-600"></span>
                                 </div>
                                 <div class="comp-widget border-orange mb-4">
                                     <div>
@@ -364,28 +333,28 @@
                                     </div>
                                     <div>10.7</div>
                                 </div>
-                                <div class="comp-widget border-warning mb-4">
+                                <div class="comp-widget border-yellow mb-4">
                                     <div>
                                         <span class="text-body-tertiary me-3">C-5000</span>
                                         22%
                                     </div>
                                     <div>53.3</div>
                                 </div>
-                                <div class="comp-widget border-danger border-opacity-50 mb-4">
+                                <div class="comp-widget border-red border-opacity-50 mb-4">
                                     <div>
                                         <span class="text-body-tertiary me-3">A-0002</span>
                                         18%
                                     </div>
                                     <div>4.87</div>
                                 </div>
-                                <div class="comp-widget border-info mb-4">
+                                <div class="comp-widget border-blue border-opacity-20 mb-4">
                                     <div>
                                         <span class="text-body-tertiary me-3">A-3200</span>
                                         10%
                                     </div>
                                     <div>3.03</div>
                                 </div>
-                                <div class="comp-widget border-dark-subtle mb-4">
+                                <div class="comp-widget border-gray-600 mb-4">
                                     <div>
                                         <span class="text-body-tertiary me-3">A-5002</span>
                                         6%
@@ -400,7 +369,7 @@
                             <div class="col-12 mb-4">
                                 <div class="card shadow">
                                     <div class="card-header no-arrow">
-                                        <h6 class="mb-0">생산량 비교</h6>
+                                        <h6 class="mb-0 fs-14 text-gray-600">생산량 비교</h6>
                                     </div>
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between mb-2">
@@ -410,7 +379,7 @@
                                         <div class="progress w-100" role="progressbar" aria-label="Example 1px high"
                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
                                             style="height: 8px">
-                                            <div class="progress-bar bg-point" style="width: 65%"></div>
+                                            <div class="progress-bar bg-orange" style="width: 65%"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -418,7 +387,7 @@
                             <div class="col-12 mb-4">
                                 <div class="card shadow">
                                     <div class="card-header no-arrow">
-                                        <h6 class="mb-0">월간 이익 성과</h6>
+                                        <h6 class="mb-0 fs-14 text-gray-600">월간 이익 성과</h6>
                                     </div>
                                     <div class="card-body">
                                         <div class="d-flex justify-content-between mb-2">
@@ -428,7 +397,7 @@
                                         <div class="progress w-100" role="progressbar" aria-label="Example 1px high"
                                             aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"
                                             style="height: 8px">
-                                            <div class="progress-bar bg-point" style="width: 45%"></div>
+                                            <div class="progress-bar bg-orange" style="width: 45%"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -436,11 +405,11 @@
                             <div class="col-12 mb-4">
                                 <div class="card shadow">
                                     <div class="card-header no-arrow">
-                                        <h6 class="mb-0">생산규모 대비 이익률</h6>
+                                        <h6 class="mb-0 fs-14 text-gray-600">생산규모 대비 이익률</h6>
                                     </div>
                                     <div class="card-body">
                                         <div class="d-flex align-items-center justify-content-center py-3">
-                                            Graph
+                                            Chart Area
                                         </div>
                                     </div>
                                 </div>
@@ -466,7 +435,7 @@
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <div class="d-flex align-items-center justify-content-center py-5 my-5">
+                                <div class="d-flex align-items-center justify-content-center py-4 my-5">
                                     chart
                                 </div>
                                 <hr class="my-4 opacity-10">
@@ -501,9 +470,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="vendor/chart.js/Chart.min.js"></script>
-    <script type="text/javascript" src="js/demo/chart-bar-demo.js"></script>
-    <script type="text/javascript" src="js/demo/chart-pie-demo.js"></script>
 </body>
 
 </html>
