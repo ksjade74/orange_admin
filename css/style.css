@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500,700&family=Poppins:wght@400;500;600&display-swap");
 
 :root {
-    --base-clr: #AAB3BA;
-    --line-clr: #FF8F2E;
-    --hover-clr: #FF8F2E;
-    --text-clr: #777;
-    --point-clr: #FF8F2E;
-    --orange-clr: #FF8F2E;
-    --hoverbg-clr: #f8f8f8;
     --sidebar-w: 260px;
 }
 * {
@@ -24,12 +17,9 @@ a {
     text-decoration: none;
 }
 a:hover {
+    color: rgb(var(--orange-rgb));
     text-decoration: none;
 }
-.text-point {color: var(--point-clr);}
-.bg-point {background-color: var(--point-clr) !important;}
-.border-point {border-color: var(--point-clr) !important;}
-
 
 .navbar {
     position: sticky;
@@ -146,8 +136,7 @@ a:hover {
     top: 70px;
     width: var(--sidebar-w);
     min-width: var(--sidebar-w);
-    padding-top: 0;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: #fff;
     transition: all .3s ease-in-out;
     box-shadow: 0.10rem 0 1.05rem 0 rgba(33, 40, 50, 0.05);
@@ -166,7 +155,7 @@ li .sidebar-link {
     align-items: center;
     padding: .8rem 1.3rem;
     font-size: 1rem;
-    color: var(--text-clr);
+    color: #75828D;
     border-left: 3px solid transparent;
     transition: all .3s ease;
     white-space: nowrap;
@@ -175,15 +164,16 @@ li .sidebar-link > img {
     text-align: center;
     filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(651%) hue-rotate(75deg) brightness(97%) contrast(94%);
 }
+li .sidebar-link.active,
 li .sidebar-link:hover {
-    color: var(--point-clr);
-    border-left: 3px solid var(--point-clr);
+    color: rgb(var(--orange-rgb));
+    border-left: 3px solid rgb(var(--orange-rgb));
 }
 .sidebar-dropdown .sidebar-link.active,
 li .sidebar-link.active > span,
 li .sidebar-link.active > img,
 li .sidebar-link:hover > img {
-    color: var(--hover-clr);
+    color: rgb(var(--orange-rgb));
     filter: brightness(0) saturate(100%) invert(61%) sepia(98%) saturate(952%) hue-rotate(334deg) brightness(98%) contrast(107%);
 }
 li .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -241,7 +231,19 @@ span.w-1 {width: 7%;}
     border-style: solid;
 }
 
-
+/* mail nav */
+.nav-underline .nav-link:focus, 
+.nav-underline .nav-link:hover,
+.nav-underline .nav-link.active, 
+.nav-underline .show>.nav-link {
+    color: rgb(var(--orange-rgb));
+    border-color: rgb(var(--orange-rgb));
+}
+.form-select:focus,
+.form-control:focus {
+    border-color: rgb(var(--orange-rgb));
+    box-shadow: 0 0 0 0.25rem rgba(var(--orange-rgb), 0.25);
+}
 
 
 
@@ -272,48 +274,15 @@ span.w-1 {width: 7%;}
 }
 .table-hover>tbody>tr:hover>* {
     --bs-table-bg-state: #F6FAFC;
-  }
-
+}
 .pagination li a {
     color: #666;
     border: 0;
 }
-
 .nav-link {
     color: #888;
 }
-
-.opacity-10 {opacity: .1;}
-
-.text-info {color: rgb(18, 168, 255) !important;}
-.bg-info {background-color: rgba(18, 168, 255, .10) !important;}
-.text-danger {color: rgb(255, 84, 55) !important;}
-         
 .shadow {box-shadow: 0 .10rem 1.5rem 0 rgba(58, 59, 69, .1) !important;}
-
-.fs-xs {font-size: .7rem;}
-.fs-sm {font-size: .85rem;}
-.fs-lg {font-size: 1.2rem;}
-
-.text-gray-100 {color: #f8f9fc !important;}  
-.text-gray-200 {color: #eaecf4 !important;}  
-.text-gray-300 {color: #dddfeb !important;}  
-.text-gray-400 {color: #d1d3e2 !important;}  
-.text-gray-500 {color: #b7b9cc !important;}  
-.text-gray-600 {color: #858796 !important;}  
-.text-gray-700 {color: #6e707e !important;}  
-.text-gray-800 {color: #5a5c69 !important;}  
-.text-gray-900 {color: #3a3b45 !important;}
-.bg-gray-100 {background-color: #f8f9fc !important;}  
-.bg-gray-200 {background-color: #eaecf4 !important;}  
-.bg-gray-300 {background-color: #dddfeb !important;}  
-.bg-gray-400 {background-color: #d1d3e2 !important;}  
-.bg-gray-500 {background-color: #b7b9cc !important;}  
-.bg-gray-600 {background-color: #858796 !important;}  
-.bg-gray-700 {background-color: #6e707e !important;}  
-.bg-gray-800 {background-color: #5a5c69 !important;}  
-.bg-gray-900 {background-color: #3a3b45 !important;}
-
 
 
 /* media query */
@@ -349,5 +318,11 @@ span.w-1 {width: 7%;}
     }
     #sidebar.expand {
         margin-left: 0;
+    }
+    .login {
+        background-image: url(../img/login.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }

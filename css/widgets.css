@@ -31,8 +31,8 @@ main .card-body .subject {
 }
 
 .form-check-input:checked {
-    background-color: var(--orange-clr);
-    border-color: var(--orange-clr);
+    background-color: rgb(var(--orange-rgb));
+    border-color: rgb(var(--orange-rgb));
 }
 
 
@@ -41,7 +41,7 @@ main .card-body .subject {
     border: 1px solid transparent;
 }
 .products .card:hover {
-    border-color: var(--hover-clr);
+    border-color: rgb(var(--orange-rgb));
 }
 .products .card .calc-box {
     height: 28px;
@@ -84,10 +84,10 @@ main .card-body .subject {
     transition: .4s;
 }
 .switch input:checked + .slider {
-    background-color: var(--hover-clr);
+    background-color: rgb(var(--orange-rgb));
 }
 .switch input:focus + .slider {
-    box-shadow: 0 0 1px var(--hover-clr);
+    box-shadow: 0 0 1px rgb(var(--orange-rgb));
 }
 .switch input:checked + .slider:before {
     -webkit-transform: translateX(19px);
@@ -132,6 +132,10 @@ form.user .btn-user {
 }
 form.user .btn-user:hover {
     background-color: #e17314;
+}
+
+.border.hover-orange:hover {
+    border: 1px solid rgb(var(--orange-rgb)) !important;
 }
 
 /* media query */
